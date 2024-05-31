@@ -1,0 +1,41 @@
+.my-portfolio-content {
+    #img-header {
+        background-image: url(assets/about-header.jpg);
+        height: 60vh;
+        background-size: cover;
+        background-attachment: sticky;
+        padding: 16px;
+    }
+    .head-list {
+        justify-content: center;
+        display: flex;
+        list-style: none;
+        a {
+            :hover {
+                color: gray;
+            }
+            text-decoration: none;  
+            margin-right: 16px;
+            color: white;
+            font-size: larger;
+        }
+    }
+    .name {
+        h1{
+            color: white;
+            text-align: center;
+            padding-top: 30px;
+        }
+    }
+    .links {
+        text-align: center;
+        .google {
+            width: 24px;
+            margin-right: 8px;
+        }
+        .linked-in {
+            width: 16px;
+            margin-bottom: 6px;
+        }
+    }
+}
