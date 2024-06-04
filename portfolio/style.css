@@ -1,19 +1,26 @@
 .my-portfolio-content {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     #img-header {
         background-image: url(assets/about-header.jpg);
-        height: 60vh;
+        height: 254px;
         background-size: cover;
         background-attachment: sticky;
         padding: 16px;
+    }
+    section {
+        margin-top: 28px;
     }
     .head-list {
         justify-content: center;
         display: flex;
         list-style: none;
-        a {
+        flex-wrap: wrap;
+        li {
             :hover {
-                color: gray;
+                color: rgb(78, 252, 240);
             }
+        }
+        a {
             text-decoration: none;  
             margin-right: 16px;
             color: white;
@@ -21,21 +28,142 @@
         }
     }
     .name {
-        h1{
-            color: white;
-            text-align: center;
-            padding-top: 30px;
-        }
+        text-align: center;
+        color: white;
     }
     .links {
         text-align: center;
         .google {
             width: 24px;
-            margin-right: 8px;
+            margin-right: 16px;
         }
         .linked-in {
             width: 16px;
             margin-bottom: 6px;
+        }
+    }
+    main {
+        .heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                margin-left: 6px;
+            }
+        }
+        #about {
+            padding: 40px;
+            padding-bottom: 0px;
+            .profile-pic {
+                width: 200px;
+                height: 200px;
+                margin: auto;
+                margin-top: -156px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    border: 4px solid #8055a2;
+                }
+            }
+            p {
+                margin-top: 24px;
+            }
+        }
+        #skills {
+            height: auto;
+            padding: 40px;
+            padding-top: 20px;
+            background-color: gainsboro;
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .skill {
+                    width: 16vw;
+                    border: 2px solid rgb(114, 114, 114);
+                    border-radius: 8px;
+                    margin-bottom:  16px;
+                    margin-right: 32px;
+                    p {
+                        margin: 0;
+                        text-align: center;
+                        width:  16vw;
+                        font-weight: 700;
+                        color: black;
+                    }
+                    .ninty-percent {
+                        border-radius: 8px;
+                        width: 90%;
+                        background-color: rgb(186, 225, 108);
+                    }
+                    .seventy-percent {
+                        border-radius: 8px;
+                        width: 70%;
+                        background-color:  #a77dc7;
+                    }
+                    .fifty-percent {
+                        border-radius: 8px;
+                        width: 50%;
+                        background-color:  rgb(255, 201, 101);
+                    }
+                }
+            }
+        }
+        #experience {
+            .experience-content {
+                position: relative;
+                .work {
+                    position: relative;
+                    width: 30%;
+                    left: 10%;
+                    text-align: right;
+                }
+                .right {
+                    left: 60%;
+                    text-align: left;
+                }
+            }
+        }
+        .timeline-pointer {
+            position: absolute;
+            height: 80%;
+            border: 2px dashed #8055a2;
+            top: 8%;
+            right: 50%;
+        }
+        #education {
+            background-color: gainsboro;
+            padding: 20px;
+            .edu-content {
+                position: relative;
+                .edu {
+                    position: relative;
+                    width: 30%;
+                    left: 10%;
+                    text-align: right;
+                }
+                .right {
+                    left: 60%;
+                    text-align: left;
+                }
+            }
+        }
+        #contacts {
+            background-color: #8055a2 ;
+            padding: 20px;
+            margin: 0;
+            .contact-content {
+                padding: 0 10%;
+                display: flex;
+                justify-content: space-between;
+                .user-input {
+                    width: 40%;
+                    hr {
+                        margin: 40px 0;
+                    }
+                }
+            }
         }
     }
 }
